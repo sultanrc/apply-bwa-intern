@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind Slicing</title>
+    <title>Obito</title>
     <link href="dist/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -87,7 +87,6 @@
             </div>
         </div>
     
-        <!-- Gambar di kanan -->
         <div class="w-[645px] h-[calc(100vh-90px)] max-h-[100vh]">
             <img src="assets/bg.png" alt="Gambar Pendaftaran" class="w-full h-full object-cover">
         </div>
@@ -102,7 +101,7 @@
                     document.getElementById('photoPreview').src = e.target.result;
                     document.getElementById('photoPreview').classList.remove('hidden');
                     document.getElementById('photoText').classList.add('hidden');
-                    document.getElementById('deleteButton').classList.remove('hidden'); // Tampilkan tombol delete
+                    document.getElementById('deleteButton').classList.remove('hidden'); 
                 };
                 reader.readAsDataURL(file);
             }
@@ -112,8 +111,8 @@
             document.getElementById('photoPreview').src = "";
             document.getElementById('photoPreview').classList.add('hidden');
             document.getElementById('photoText').classList.remove('hidden');
-            document.getElementById('deleteButton').classList.add('hidden'); // Sembunyikan tombol delete
-            document.getElementById('photoInput').value = ""; // Reset input file
+            document.getElementById('deleteButton').classList.add('hidden'); 
+            document.getElementById('photoInput').value = ""; 
         }
     </script>
 </body>
